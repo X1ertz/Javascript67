@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Lecture-1</title>
+</head>
+<body>
+    <h2>What Can javaScript Do?</h2>
+    <h3>Javascript Can Changes HTML Attribute values</h3>
+    <p>In This Case JavaScript Changes The Value Of The Src (source) Attribute Of An Image.</p>
+
+    <button class="button-on" onclick="document.getElementById('myImage').src='./upload/images/pic_bulbon.gif'">
+        Turn on the light
+    </button>
+
+    <img id="myImage" src="./upload/images/pic_bulboff.gif" alt="" style="width: 100px;">
+    
+    <button class="button-off" onclick="document.getElementById('myImage').src='./upload/images/pic_bulboff.gif'">
+        Turn off the light
+    </button>
+
+    <!-- include js form anotherfile -->
+    <script src="index.js"></script>
+</body>
+</html>
