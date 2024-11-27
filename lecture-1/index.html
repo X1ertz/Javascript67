@@ -7,20 +7,31 @@
     <title>Lecture-1</title>
 </head>
 <body>
-    <h2>What Can javaScript Do?</h2>
-    <h3>Javascript Can Changes HTML Attribute values</h3>
-    <p>In This Case JavaScript Changes The Value Of The Src (source) Attribute Of An Image.</p>
-
+    <center>
+    <div class="container">
+        <div class="description">
+            <h1>What Can javaScript Do?</h1><br>
+            <h3>Javascript Can Changes HTML Attribute values</h3>
+            <p>In This Case JavaScript Changes The Value Of The Src (source) Attribute Of An Image.</p>
+        </div>
+   
+    <div class="image">
+        <img id="myImage" src="./upload/images/pic_bulboff.gif" alt="" style="width: 100px;">
+        <br>
+    </div>
     <button class="button-on" onclick="document.getElementById('myImage').src='./upload/images/pic_bulbon.gif'">
         Turn on the light
     </button>
-
-    <img id="myImage" src="./upload/images/pic_bulboff.gif" alt="" style="width: 100px;">
     
     <button class="button-off" onclick="document.getElementById('myImage').src='./upload/images/pic_bulboff.gif'">
         Turn off the light
     </button>
 
+    </div>
+    <button  class="button-text" id="toggle-btn">Hide Text</button>
+    <div class="text" id="message">Hello! This is the message.</div>
+    </center>
+    
     <!-- include js form anotherfile -->
     <script src="index.js"></script>
 </body>

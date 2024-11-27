@@ -2,6 +2,9 @@
     margin: 0;
     align-items: center;
 }
+body{
+    background: linear-gradient(to right, #f8aed7, #fae397);
+}
 
 .button-on{
  padding: 12px 20px;
@@ -23,10 +26,52 @@
     border-radius: 10px;
     background-color: rgb(255, 88, 66);
     font-size: 14px;
+    margin-left: 10px;
     font-weight: bold;
     transition: 0.5s ease;
    }
    .button-off:hover{
     background-color: rgb(134, 31, 0);
     color:aliceblue;
+}
+.container{
+    margin-top: 4rem;
+
+}
+.description{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.image{
+    margin-bottom: 2rem;
+}
+.button-text{
+    margin-top: 4rem;
+    padding: 12px 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: hsl(32, 98%, 55%);
+    transition: 0.5s ease;
+}
+.button-text:hover{
+    background-color: rgb(209, 161, 2);
+    color: aliceblue;
+}
+.text{
+    margin-top: 2rem;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeInAnimation 1.5s ease-in forwards;
+    
+}
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
