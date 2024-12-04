@@ -50,13 +50,13 @@ console.log(multiply(2,30));
 
 //callback function
 function createQuote(quote,callback){
-    let myQoute = "Like I always say"+quote;
-    callback(myQoute);
+    let myQuote = "Like I always say. "+quote;
+    callback(myQuote);
 }
 
-function logQoute(quote){
+function logQuote(quote){
     console.log(quote+'Yes...!');
 }
 
-createQuote("You will getting better! ",logQoute);
+createQuote("You will getting better! ",logQuote);
 
